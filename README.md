@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# X-RAY on FHIR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made with FHIR API, Meld SMART Launcher and React.js to display X-RAY images of a hand fracture, then run an AI pipeline to find out if the fracture is intra-articular or extra-articular. Then, the conclusion is shown, and heatmaps generated from the AI pipeline are shown to the user.
 
-## Available Scripts
+## Run application
 
-In the project directory, you can run:
+To run the application, you first need to run `npm install`. Then the Meld sandbox needs to be launched before `npm run start` in the terminal to run the react application.
 
-### `npm start`
+## Technology
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Meld SMART Launcher
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project uses Meld, more specifically, a specialized FHIR sandbox where the default patients are edited to contain a procedure of an X-ray exam on hand and the Dropbox links to the X-ray pictures are also stored here. The Meld Sandbox uses FHIR version: FHIR R4 (v4.0.1) and HAPI FHIR Server:5.2.0. To run the app, the Meld Sandbox must be launched with the default practioner and no patient.
 
-### `npm test`
+### FHIR API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+An FHIR server is launched through the Meld, and the client provides an access token with the scope: launch/patient/\*.cruds openid profile (which is set in the Meld sandbox settings). The FHIR-API is used to retrieve the patients through the [GET /Patient](https://build.fhir.org/patient-definitions.html) and the patient's procedures for the selected patient [GET /Procedure?Patient={patientId}](https://fhir-ru.github.io/procedure.html#:~:text=Procedure%20is%20one%20of%20the,of%20the%20provision%20of%20care).
 
-### `npm run build`
+### REACT.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is made in REACT.js to display the information and have the user intract with the page.
