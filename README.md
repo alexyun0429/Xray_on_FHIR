@@ -11,6 +11,7 @@ To run the application, you first need to run `npm install`. Then the Meld sandb
 ### Meld SMART Launcher
 
 This project uses Meld, more specifically, a specialized FHIR sandbox where the default patients are edited to contain a procedure of an X-ray exam on hand and the Dropbox links to the X-ray pictures are also stored here. The Meld Sandbox uses FHIR version: FHIR R4 (v4.0.1) and HAPI FHIR Server:5.2.0. To run the app, the Meld Sandbox must be launched with the default practioner and no patient.
+https://meld.interop.community/
 
 ### FHIR API
 
