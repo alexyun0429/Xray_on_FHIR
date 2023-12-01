@@ -1,0 +1,4432 @@
+{
+  "resourceType": "Bundle",
+  "type": "bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "use": "official",
+            "family": "Huang",
+            "given": ["Jason"],
+            "text": "Jason Huang"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-09-02",
+        "identifier": [
+          {
+            "system": "https://clinfhir.com/fhir/NamingSystem/identifier",
+            "value": "Test-Jason"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jason Huang</div>"
+        },
+        "id": "10762",
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Asthma</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "mild to moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "mild to moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "195917001",
+              "system": "https://snomed.info/ct",
+              "display": "asthma",
+              "path": "code"
+            }
+          ],
+          "text": "asthma"
+        },
+        "onsetAge": {
+          "value": 14,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10766",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Diabetes</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "73211009",
+              "system": "https://snomed.info/ct",
+              "display": "diabetes",
+              "path": "code"
+            }
+          ],
+          "text": "diabetes"
+        },
+        "onsetAge": {
+          "value": 60,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10767",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Hypertension</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "255604002",
+              "system": "https://snomed.info/ct",
+              "display": "mild",
+              "path": "severity"
+            }
+          ],
+          "text": "Mild"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "38341003",
+              "system": "https://snomed.info/ct",
+              "display": "hypertension",
+              "path": "code"
+            }
+          ],
+          "text": "hypertension"
+        },
+        "onsetAge": {
+          "value": 68,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10768",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Depression</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "35489007",
+              "system": "https://snomed.info/ct",
+              "display": "depression",
+              "path": "code"
+            }
+          ],
+          "text": "depression"
+        },
+        "onsetAge": {
+          "value": 74,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10769",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Neuropathic pain</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "247389009",
+              "system": "https://snomed.info/ct",
+              "display": "neuropathic pain",
+              "path": "code"
+            }
+          ],
+          "text": "neuropathic pain"
+        },
+        "onsetAge": {
+          "value": 75,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10770",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Rheumatoid Arthritis</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "69896004",
+              "system": "https://snomed.info/ct",
+              "display": "rheumatoid arthritis",
+              "path": "code"
+            }
+          ],
+          "text": "rheumatoid arthritis - both hands"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "12861001",
+                "system": "https://snomed.info/ct",
+                "display": "both hands",
+                "path": "bodySite"
+              }
+            ],
+            "text": "both hands"
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "57676002",
+                    "system": "https://snomed.info/ct",
+                    "display": "Painful Joint"
+                  }
+                ],
+                "text": "Painful joint"
+              }
+            ]
+          }
+        ],
+        "onsetAge": {
+          "value": 72,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10771",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Rheumatoid arthritis - left elbow</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "mild to moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "69896004",
+              "system": "https://snomed.info/ct",
+              "display": "rheumatoid arthritis",
+              "path": "code"
+            }
+          ],
+          "text": "rheumatoid arthritis - left elbow"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "1927002",
+                "system": "https://snomed.info/ct",
+                "display": "left elbow",
+                "path": "bodySite"
+              }
+            ],
+            "text": "left elbow"
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "57676002",
+                    "system": "https://snomed.info/ct",
+                    "display": "Painful Joint"
+                  }
+                ],
+                "text": "Painful joint"
+              }
+            ]
+          }
+        ],
+        "onsetAge": {
+          "value": 74,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10772",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>GERD</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "235595009",
+              "system": "https://snomed.info/ct",
+              "display": "GERD",
+              "path": "code"
+            }
+          ],
+          "text": "GERD"
+        },
+        "onsetAge": {
+          "value": 66,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10773",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Hypercholesterolaemia</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "13644009",
+              "system": "https://snomed.info/ct",
+              "display": "high cholesterol",
+              "path": "code"
+            }
+          ],
+          "text": "high cholesterol"
+        },
+        "onsetAge": {
+          "value": 68,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10774",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Onychomycosis</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "24484000",
+              "system": "https://snomed.info/ct",
+              "display": "severe",
+              "path": "severity"
+            }
+          ],
+          "text": "severe"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "414941998",
+              "system": "https://snomed.info/ct",
+              "display": "onychomycosis",
+              "path": "code"
+            }
+          ],
+          "text": "onychomycosis"
+        },
+        "onsetAge": {
+          "value": 77,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "id": "10775",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Angina</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "14657009",
+                "system": "https://snomed.info/sct",
+                "display": "Diagnosis",
+                "path": "category"
+              }
+            ],
+            "text": "Diagnosis"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "https://snomed.info/ct",
+              "display": "moderate",
+              "path": "severity"
+            }
+          ],
+          "text": "Moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "194818000",
+              "system": "https://snomed.info/ct",
+              "display": "angina",
+              "path": "code"
+            }
+          ],
+          "text": "angina"
+        },
+        "onsetAge": {
+          "value": 76,
+          "code": "a",
+          "system": "https://unitsofmeasure.org"
+        },
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "29857009",
+                    "system": "https://snomed.info/ct",
+                    "display": "Chest Pain"
+                  }
+                ],
+                "text": "Chest Pain"
+              }
+            ]
+          }
+        ],
+        "id": "10776",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-09-02T02:28:40Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"https://www.w3.org/1999/xhtml\">Ibuprofen causes urticaria</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "type": "allergy",
+        "code": {
+          "coding": [
+            {
+              "system": "https://snomed.info/sct",
+              "code": "387207008",
+              "display": "Ibuprofen",
+              "path": "code"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/10762"
+        },
+        "recordedDate": "2016-03-07",
+        "recorder": {
+          "reference": "Practitioner/10763"
+        },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "https://snomed.info/sct",
+                    "code": "126485001",
+                    "display": "Urticaria"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "10777"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-09-02T02:28:40Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"https://www.w3.org/1999/xhtml\">eggs causes hives</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "path": "clinicalStatus"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "https://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "path": "verificationStatus"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": ["food"],
+        "code": {
+          "coding": [
+            {
+              "system": "https://snomed.info/sct",
+              "code": "91930004",
+              "display": "Allergy to eggs",
+              "path": "code"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/10762"
+        },
+        "onsetAge": {
+          "value": 4,
+          "unit": "year",
+          "system": "https://unitsofmeasure.org",
+          "code": "a"
+        },
+        "recordedDate": "2018-03-07",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "https://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Hives"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "https://snomed.info/sct",
+                    "code": "422587007",
+                    "display": "Nausea"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "https://snomed.info/sct",
+                    "code": "422400008",
+                    "display": "Vomiting"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "10778",
+        "recorder": {
+          "reference": "Practitioner/10765"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>aspirin 81mg once daily</div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med1",
+            "code": {
+              "coding": [
+                {
+                  "code": "370167008",
+                  "system": "https://snomed.info/ct",
+                  "display": "aspirin 81mg e/c tablet "
+                }
+              ],
+              "text": "aspirin 81mg e/c tablet"
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#med1",
+          "display": "aspirin 81mg e/c tablet"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "49436004",
+                "system": "https://snomed.info/ct",
+                "display": "atrial fibrillation (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "atrial fibrillation"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10780",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>beclomethasone 2 puffs twice daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "376733004",
+              "system": "https://snomed.info/ct",
+              "display": "beclomethasone dipropionate 40mcg aerosol",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "beclomethasone dipropionate 40mcg aerosol"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "195967001",
+                "system": "https://snomed.info/ct",
+                "display": "asthma (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "asthma"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "2 puffs twice daily",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "system": "https://snomed.info/ct",
+                  "unit": "puffs",
+                  "code": "415215001"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10781",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>buspirone 5mg TDS</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "321323009",
+              "system": "https://snomed.info/ct",
+              "display": "buspirone 5mg",
+              "path": "medicationCodeableConcept"
+            }
+          ]
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "19748006",
+                "system": "https://snomed.info/ct",
+                "display": "anxiety disorder",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "anxiety disorder"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "3 times daily",
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10797",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>carvedilol 25 mg twice daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "318632005",
+              "system": "https://snomed.info/ct",
+              "display": "carvedilol 25 mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "carvedilol 25 mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "38341003",
+                "system": "https://snomed.info/ct",
+                "display": "hypertension (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "twice daily",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10782",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>chlortalidone 15 mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "376321007",
+              "system": "https://snomed.info/ct",
+              "display": "chlortalidone 15 mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "chlortalidone 15 mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "38341003",
+                "system": "https://snomed.info/ct",
+                "display": "hypertension (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10783",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>citalopram 20 mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "321987003",
+              "system": "https://snomed.info/ct",
+              "display": "citalopram 20 mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "citalopram 20 mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "35489007",
+                "system": "https://snomed.info/ct",
+                "display": "depression (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "depression"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10784",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>gabapentin 600mg twice daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "323021008",
+              "system": "https://snomed.info/ct",
+              "display": "gabapentin 600mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "gabapentin 600mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "247398009",
+                "system": "https://snomed.info/ct",
+                "display": "neuropathic pain (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "neuropathic pain"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "twice daily",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10785",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>insulin glargine 100units/mL 28 units nocte</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "400847007",
+              "system": "https://snomed.info/ct",
+              "display": "insulin glargine 100units/mL injection",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "insulin glargine 100units/mL injection"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "73211009",
+                "system": "https://snomed.info/ct",
+                "display": "diabetes (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "diabetes"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "28 units before bed",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 28,
+                  "system": "https://snomed.info/ct",
+                  "unit": "unit dose",
+                  "code": "408102007"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10786",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>isosorbide mononitrate 20mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "319134001",
+              "system": "https://snomed.info/ct",
+              "display": "isosorbide mononitrate 20mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "isosorbide mononitrate 20mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "194828000",
+                "system": "https://snomed.info/ct",
+                "display": "angina",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily at bedtime",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10796",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>lisinopril 20mg mane</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "318860005",
+              "system": "https://snomed.info/ct",
+              "display": "lisinopril 20mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "lisinopril 20mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "38341003",
+                "system": "https://snomed.info/ct",
+                "display": "hypertension (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10795",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>losartan 100mg + hydrochlorothiazide 12.5mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "444639002",
+              "system": "https://snomed.info/ct",
+              "display": "losartan 100mg + hydrochlorothiazide 12.5mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "losartan 100mg + hydrochlorothiazide 12.5mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "38341003",
+                "system": "https://snomed.info/ct",
+                "display": "hypertension (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "hypertension"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10787",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>metformin 1000mg twice daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "411533003",
+              "system": "https://snomed.info/ct",
+              "display": "metformin 1000mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "metformin 1000mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "73211009",
+                "system": "https://snomed.info/ct",
+                "display": "diabetes (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "diabetes"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab twice daily",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10788",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>naproxen 500mg twice daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "329839005",
+              "system": "https://snomed.info/ct",
+              "display": "naproxen 500mg e/c tablet",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "naproxen 500mg e/c tablet"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "69896004",
+                "system": "https://snomed.info/ct",
+                "display": "rheumatoid arthritis (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "rheumatoid arthritis"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab twice daily",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10789",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>omeprazole 40mg daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "407848004",
+              "system": "https://snomed.info/ct",
+              "display": "omeprazole 40mg e/c tablet",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "omeprazole 40mg e/c tablet "
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "235595009",
+                "system": "https://snomed.info/ct",
+                "display": "GERD (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "Gastro Oesophageal reflux"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10790",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>prednisone 20mg 2 tabs/day</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "325456002",
+              "system": "https://snomed.info/ct",
+              "display": "prednisone 20mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "prednisone 20mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "195967001",
+                "system": "https://snomed.info/ct",
+                "display": "asthma (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "asthma"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "2 tabs once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": true,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10791",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>salbutamol inhaler 2 puffs every 4 hours as required</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "320176004",
+              "system": "https://snomed.info/ct",
+              "display": " salbutamol 100micrograms/inhaler ",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "salbutamol 100micrograms/inhaler"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "195967001",
+                "system": "https://snomed.info/ct",
+                "display": "asthma (disorder)",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "asthma"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "2 puffs every 4 hours as needed",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 4,
+                "periodUnit": "h"
+              }
+            },
+            "asNeededBoolean": true,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "system": "https://snomed.info/ct",
+                  "unit": "puffs",
+                  "code": "415215001"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10779",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>simvastatin 40mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "429374003",
+              "system": "https://snomed.info/ct",
+              "display": "simvastatin 40mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "simvastatin 40mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "13644009",
+                "system": "https://snomed.info/ct",
+                "display": "high cholesterol",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "high cholesterol"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": true,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10792",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>terbinafine 250mg once daily</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "324718007",
+              "system": "https://snomed.info/ct",
+              "display": "terbinafine 250mg",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "terbinafine 250mg"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "414941008",
+                "system": "https://snomed.info/ct",
+                "display": "onychomycosis",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "onychomycosis"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab once daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": true,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "system": "https://snomed.info/ct",
+                  "unit": "tablet",
+                  "code": "428673006"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10793",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>zolpidem 5mg sublingual tablet, 1 nocte</div>"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "442160008",
+              "system": "https://snomed.info/ct",
+              "display": "zolpidem 5mg sublingual tablet",
+              "path": "medicationCodeableConcept"
+            }
+          ],
+          "text": "zolpidem 5mg sublingual tablet"
+        },
+        "status": "active",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "193462001",
+                "system": "https://snomed.info/ct",
+                "display": "insomnia",
+                "path": "reasonCode"
+              }
+            ],
+            "text": "insomnia"
+          }
+        ],
+        "dosage": [
+          {
+            "text": "1 tab before bed",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 28,
+                  "system": "https://snomed.info/ct",
+                  "unit": "unit dose",
+                  "code": "408102007"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "10794",
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "id": "10798",
+        "mode": "snapshot",
+        "status": "current",
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/10766"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10767"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10768"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10769"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10770"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10771"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10772"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10773"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10774"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10775"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/10776"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "problems",
+              "system": "https://hl7.org/fhir/list-example-use-codes",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Problem list</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "id": "10799",
+        "mode": "snapshot",
+        "status": "current",
+        "entry": [
+          {
+            "item": {
+              "reference": "AllergyIntolerance/10777"
+            }
+          },
+          {
+            "item": {
+              "reference": "AllergyIntolerance/10778"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "allergies",
+              "system": "https://hl7.org/fhir/list-example-use-codes",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Allergies list</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "id": "10800",
+        "mode": "snapshot",
+        "status": "current",
+        "entry": [
+          {
+            "item": {
+              "reference": "MedicationStatement/10779"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10780"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10781"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10782"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10783"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10784"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10785"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10786"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10787"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10788"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10789"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10790"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10791"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10792"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10793"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10794"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10795"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10796"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/10797"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "medications",
+              "system": "https://hl7.org/fhir/list-example-use-codes",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Medications list</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10801",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10773"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>undefined</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-08-17T02:28:38.094Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10764",
+              "display": "Joseph Jones"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10802",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10776"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10769"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10776"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Aug 17th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-17T02:28:38.096Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10764",
+              "display": "Joseph Jones"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10803",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10773"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10767"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jul 17th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-08-19T02:28:38.096Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10765",
+              "display": "Karen Kobold"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10804",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10776"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10772"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10773"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Aug 19th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-08-27T02:28:38.096Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10764",
+              "display": "Joseph Jones"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10805",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10776"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10770"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10768"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Aug 27th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-17T02:28:38.097Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10764",
+              "display": "Joseph Jones"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10806",
+        "status": "finished",
+        "diagnosis": [],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jul 17th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-08-17T02:28:38.097Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10763",
+              "display": "Mary Smith"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10807",
+        "status": "finished",
+        "diagnosis": [],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Aug 17th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-17T02:28:38.097Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10765",
+              "display": "Karen Kobold"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10808",
+        "status": "finished",
+        "diagnosis": [],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jul 17th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-14T02:28:38.097Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10764",
+              "display": "Joseph Jones"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10809",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10775"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jul 14th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-20T02:28:38.098Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10765",
+              "display": "Karen Kobold"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10810",
+        "status": "finished",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/10766"
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/10771"
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "class": {
+          "system": "https://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'>Jul 20th 2022 for Sore throat</div>"
+        },
+        "reasonCode": [
+          {
+            "text": "Sore throat"
+          }
+        ],
+        "type": [
+          {
+            "text": "Primary care visit"
+          }
+        ],
+        "period": {
+          "start": "2022-07-19T02:28:38.098Z"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/10765",
+              "display": "Karen Kobold"
+            }
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10811",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.4,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-09-02T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10807"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.4 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10812",
+        "status": "final",
+        "valueQuantity": {
+          "value": 89,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-09-02T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10801"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 89 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10813",
+        "status": "final",
+        "valueQuantity": {
+          "value": 35,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-09-02T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10804"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 35 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10814",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-09-02T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10809"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10815",
+        "status": "final",
+        "valueQuantity": {
+          "value": 73.1,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-09-02T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10808"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 73.1 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10816",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.4,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-08-26T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10810"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.4 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10817",
+        "status": "final",
+        "valueQuantity": {
+          "value": 73,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-08-26T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10801"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 73 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10818",
+        "status": "final",
+        "valueQuantity": {
+          "value": 29,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-08-26T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10808"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 29 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10819",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-08-26T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10803"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10820",
+        "status": "final",
+        "valueQuantity": {
+          "value": 75.6,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-08-26T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10805"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 75.6 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10821",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.6,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-08-19T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10804"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.6 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10822",
+        "status": "final",
+        "valueQuantity": {
+          "value": 79,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-08-19T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10801"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 79 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10823",
+        "status": "final",
+        "valueQuantity": {
+          "value": 25,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-08-19T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10803"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 25 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10824",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-08-19T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10806"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10825",
+        "status": "final",
+        "valueQuantity": {
+          "value": 72.2,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-08-19T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10807"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 72.2 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10826",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.8,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-08-12T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10804"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.8 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10827",
+        "status": "final",
+        "valueQuantity": {
+          "value": 81,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-08-12T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10809"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 81 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10828",
+        "status": "final",
+        "valueQuantity": {
+          "value": 27,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-08-12T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10806"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 27 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10829",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-08-12T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10805"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10830",
+        "status": "final",
+        "valueQuantity": {
+          "value": 70.7,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-08-12T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10805"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 70.7 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10831",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.1,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-08-05T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10807"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.1 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10832",
+        "status": "final",
+        "valueQuantity": {
+          "value": 84,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-08-05T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10802"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 84 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10833",
+        "status": "final",
+        "valueQuantity": {
+          "value": 28,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-08-05T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10807"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 28 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10834",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-08-05T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10807"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10835",
+        "status": "final",
+        "valueQuantity": {
+          "value": 70.5,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-08-05T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10806"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 70.5 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10836",
+        "status": "final",
+        "valueQuantity": {
+          "value": 36.7,
+          "unit": "C"
+        },
+        "effectiveDateTime": "2022-07-29T10:28:38+08:00",
+        "code": {
+          "text": "Body Temperature",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8310-5",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10810"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Body Temperature, 36.7 C</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10837",
+        "status": "final",
+        "valueQuantity": {
+          "value": 83,
+          "unit": "bpm"
+        },
+        "effectiveDateTime": "2022-07-29T10:28:38+08:00",
+        "code": {
+          "text": "Heart Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8867-4",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10805"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Heart Rate, 83 bpm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10838",
+        "status": "final",
+        "valueQuantity": {
+          "value": 31,
+          "unit": "resp/min"
+        },
+        "effectiveDateTime": "2022-07-29T10:28:38+08:00",
+        "code": {
+          "text": "Respiratory Rate",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "9279-1",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10763"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10803"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Respiratory Rate, 31 resp/min</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10839",
+        "status": "final",
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm"
+        },
+        "effectiveDateTime": "2022-07-29T10:28:38+08:00",
+        "code": {
+          "text": "Height",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "8302-2",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10765"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10806"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Height, 90 cm</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10840",
+        "status": "final",
+        "valueQuantity": {
+          "value": 74.2,
+          "unit": "Kg"
+        },
+        "effectiveDateTime": "2022-07-29T10:28:38+08:00",
+        "code": {
+          "text": "Weight",
+          "coding": [
+            {
+              "system": "https://loinc.org",
+              "code": "3141-9",
+              "path": "code"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/10762"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/10764"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/10805"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div  xmlns='https://www.w3.org/1999/xhtml'>Weight, 74.2 Kg</div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "10841",
+        "status": "pending",
+        "description": "Investigate Angina",
+        "start": "2022-09-06T10:28:38+08:00",
+        "end": "2022-09-06T10:43:38+08:00",
+        "minutesDuration": 15,
+        "participant": [
+          {
+            "actor": {
+              "reference": "Practitioner/10764"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "Patient/10762"
+            },
+            "status": "accepted"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'><div>Investigate Angina</div><div>Clarence cardiology clinic</div></div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "10842",
+        "status": "pending",
+        "description": "Routine checkup",
+        "start": "2022-09-09T10:28:38+08:00",
+        "end": "2022-09-09T10:43:38+08:00",
+        "minutesDuration": 15,
+        "participant": [
+          {
+            "actor": {
+              "reference": "Practitioner/10763"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "Patient/10762"
+            },
+            "status": "accepted"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='https://www.w3.org/1999/xhtml'><div>Routine checkup</div><div>Dr Dave</div></div>"
+        },
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "10763",
+        "name": [
+          {
+            "text": "Mary Smith"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "10765",
+        "name": [
+          {
+            "text": "Karen Kobold"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "10764",
+        "name": [
+          {
+            "text": "Joseph Jones"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-09-02T02:28:40Z",
+          "versionId": "1"
+        }
+      }
+    }
+  ]
+}

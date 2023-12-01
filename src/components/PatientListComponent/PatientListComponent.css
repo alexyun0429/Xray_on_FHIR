@@ -1,0 +1,12 @@
+.cardContent {
+  /* padding: 1%; */
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.cardContentProp {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,0 +1,20 @@
+.SearchBtn {
+  background-color: var(--brand-color) !important;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 20px;
+  outline: 3px solid var(--brand-color) !important;
+  outline-offset: 0px;
+  transition: outline-offset 0.3s;
+}
+
+.SearchBtn:is(:hover, :focus) {
+  outline-offset: 3px;
+}

@@ -1,0 +1,120 @@
+.mainPage {
+  margin-top: 65px;
+  height: 100vh;
+}
+
+.leftSide {
+  position: fixed;
+  height: 100%;
+  border-radius: 15px;
+  border-color: var(--brand-color) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+.leftSection {
+  padding-top: 100px;
+  background-color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.leftSection-fullscreen {
+  padding-top: 100px;
+  background-color: var(--brand-color);
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for background-color */
+}
+
+.rightSection {
+  padding-top: 100px;
+  background-color: var(--brand-color);
+  overflow-y: auto;
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for background-color */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.rightSection-fullscreen {
+  padding-top: 100px;
+  background-color: white;
+  overflow-y: auto;
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for background-color */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.rightSection-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSection-patient-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border-radius: 15px;
+  border-color: var(--brand-color) !important;
+  text-align: center;
+}
+
+.searchList {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.arrowFilterPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-right: 5%;
+  padding-left: 3%;
+  padding-right: 5%;
+}
+
+.filterPosition {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card {
+  margin-bottom: 3%;
+  border-radius: 15px;
+  border: 5px;
+  border-color: var(--brand-color) !important;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hiddenLeftSection {
+  display: none;
+}
+
+.search-component {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+}
+
+.hiddenLeftSection {
+  display: none;
+}

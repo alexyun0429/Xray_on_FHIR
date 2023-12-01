@@ -1,0 +1,117 @@
+.label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-top: 50px;
+}
+.text_inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  flex: 1;
+}
+
+.x-ray-header {
+  margin-left: 230px;
+  font-size: large;
+}
+
+.x-ray-header-small-screen {
+  font-size: large;
+  margin-left: 50%;
+}
+
+.frature_type {
+  margin-top: 130px;
+  margin-left: 150%;
+}
+
+.post-media  {
+  margin-top: 500px;
+}
+
+.heatmap-header {
+  font-size: large;
+  margin-left: 670px;
+}
+.fullSection {
+  width: 100%;
+}
+.patient-detail.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.patient-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.patient-detail.fullscreen {
+  width: 100%;
+  height: 100vh;
+}
+
+.text-content {
+  margin-bottom: 20px;
+}
+
+.x-ray-container {
+  display: flex;
+  margin-left: 40px;
+}
+
+.x-ray-picture {
+  flex-basis: calc(20% - 10px);
+}
+
+.heatmap-container {
+  margin-bottom: 20px;
+}
+
+.headers {
+  display: flex;
+}
+
+.heatmap-picture {
+  flex-basis: calc(20% - 10px);
+}
+
+.fullscreen-exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 130px;
+}
+
+.x-ray-picture-2 {
+  flex-basis: calc(20% - 10px);
+  margin-right: 200px;
+}
+
+.result-header {
+  font-size: xx-large;
+}
+.name-header {
+  font-size: x-large;
+}
+
+.result-header-fullscreen {
+  font-size: xx-large;
+  margin-top: 15%;
+}
+
+.frature-type-fullscreen {
+  margin-top: 230px;
+}

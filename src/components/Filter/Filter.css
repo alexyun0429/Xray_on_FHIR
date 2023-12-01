@@ -1,0 +1,27 @@
+.calendar-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+.btn1 {
+  background-color: var(--dark-color) !important;
+  color: white;
+  border: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 3px 2px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 20px;
+  outline: 3px solid var(--dark-color) !important;
+  outline-offset: 0px;
+  transition: outline-offset 0.3s;
+}
+
+.btn1:is(:hover, :focus) {
+  outline-offset: 3px;
+}

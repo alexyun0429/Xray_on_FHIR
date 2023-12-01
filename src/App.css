@@ -1,0 +1,39 @@
+:root {
+  --main-color: #ffc300 !important;
+  --brand-color: #0096c7 !important;
+  --secondary-color: #67e6ff !important;
+  --black-color: #080611 !important;
+  --dark-color: #2d2c34 !important;
+}
+
+/* Margins and Paddings */
+.mt_30 {
+  margin-top: 30px !important;
+}
+
+.mt_60 {
+  margin-top: 60px !important;
+}
+
+.mb_30 {
+  margin-bottom: 30px !important;
+}
+
+.p_30 {
+  padding: 30x !important;
+}
+
+.pb_45 {
+  padding-bottom: 45px !important;
+}
+
+@media (max-width: 991px) {
+  .mt_60 {
+    margin-top: 30px;
+  }
+}
+
+.noPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
