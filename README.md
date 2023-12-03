@@ -1,6 +1,7 @@
 # X-RAY on FHIR
 
 This project is made with FHIR API, Meld SMART Launcher and React.js to display X-RAY images of a hand fracture, then run an AI pipeline to find out if the fracture is intra-articular or extra-articular. Then, the conclusion is shown, and heatmaps generated from the AI pipeline are shown to the user.
+(NOTE: for a security purpose, I have removed AI pipeline url)
 
 ## Run application
 
@@ -19,3 +20,7 @@ An FHIR server is launched through the Meld, and the client provides an access t
 ### REACT.js
 
 The project is made in REACT.js to display the information and have the user intract with the page.
+
+### Acknowledgment
+
+The project was built with Thea, Selma, Tord, Elin, and Emilie, whom CSIRO mentored.

@@ -112,7 +112,7 @@ export const postMedia = async (
   let config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "https://drf-classification-jx2kby5u3q-ts.a.run.app/drf",
+    url: "", // for the security purpose I have removed it,
     data: data,
     responseType: "blob",
   };
