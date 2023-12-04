@@ -16,12 +16,12 @@ https://meld.interop.community/
 
 ### FHIR API
 
-An FHIR server is launched through the Meld, and the client provides an access token with the scope: launch/patient/\*.cruds openid profile (which is set in the Meld sandbox settings). The FHIR-API is used to retrieve the patients through the [GET /Patient](https://build.fhir.org/patient-definitions.html) and the patient's procedures for the selected patient [GET /Procedure?Patient={patientId}](https://fhir-ru.github.io/procedure.html#:~:text=Procedure%20is%20one%20of%20the,of%20the%20provision%20of%20care).
+An FHIR server is launched through the Meld, and the client provides an access token with the scope: launch/patient/\*.cruds open ID profile (which is set in the Meld sandbox settings). The FHIR-API is used to retrieve the patients through the [GET /Patient](https://build.fhir.org/patient-definitions.html) and the patient's procedures for the selected patient [GET /Procedure?Patient={patientId}](https://fhir-ru.github.io/procedure.html#:~:text=Procedure%20is%20one%20of%20the,of%20the%20provision%20of%20care).
 
 ### REACT.js
 
-The project is made in REACT.js to display the information and have the user intract with the page.
+The project is made in REACT.js to display the information and have the user interact with the page.
 
 ### Acknowledgment
 
-The project was built with Thea, Selma, Tord, Elin, and Emilie, whom CSIRO mentored.
+The project was built with Thea, Selma, Tord, Elin, and Emilie, with CSIRO mentors.
